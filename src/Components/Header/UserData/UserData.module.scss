@@ -1,0 +1,12 @@
+@import "../../../index.scss";
+.userdata {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  > span {
+    color: $primary-colour;
+    font-size: 14px;
+    font-family: $soure-code;
+  }
+}

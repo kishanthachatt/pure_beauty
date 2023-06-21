@@ -1,0 +1,10 @@
+@import "../../index.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: $seconday-colour;
+  min-height: 70px;
+  align-items: center;
+  padding: 0px 30px;
+}
