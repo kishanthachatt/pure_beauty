@@ -1,0 +1,19 @@
+@import "../../../index.scss";
+
+.address {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  > label {
+    color: $seconday-colour;
+    font-size: 14px;
+    font-family: $soure-code;
+    text-transform: uppercase;
+  }
+  > p {
+    color: $seconday-colour;
+    font-size: 12px;
+    font-family: $soure-code;
+    line-height: 24px;
+  }
+}

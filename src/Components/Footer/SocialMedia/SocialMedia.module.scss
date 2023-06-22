@@ -1,0 +1,13 @@
+@import "../../../index.scss";
+
+.socialMedia {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  > label {
+    color: $seconday-colour;
+    font-size: 14px;
+    font-family: $soure-code;
+    text-transform: uppercase;
+  }
+}

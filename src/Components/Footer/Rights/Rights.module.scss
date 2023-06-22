@@ -1,0 +1,16 @@
+@import "../../../index.scss";
+
+.rights {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  > p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: $seconday-colour;
+    font-family: $soure-code;
+    font-size: 14px;
+    text-transform: uppercase;
+  }
+}
