@@ -1,7 +1,8 @@
 import * as React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Home from "./Routes/Home";
+
 import { Layout } from "./Components/Layout";
+import Blogs from "./Routes/Blogs";
 
 function App() {
   return (
@@ -9,7 +10,7 @@ function App() {
       <React.Suspense fallback={<p>loading...</p>}>
         <Routes>
           <Route element={<Layout />}>
-            <Route path="/home" element={<Home />} />
+            <Route path="/home" element={<Blogs />} />
           </Route>
         </Routes>
       </React.Suspense>
