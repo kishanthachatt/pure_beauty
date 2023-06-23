@@ -1,0 +1,26 @@
+@import "../../index.scss";
+
+.loginContainer {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  background-color: $primary-colour;
+  height: 100vh;
+  .leftside {
+    padding: 56px 64px;
+    > h3 {
+      padding-top: 50px;
+      font-family: $dm-serif;
+      font-size: 26px;
+      color: $seconday-colour;
+      font-weight: lighter;
+    }
+  }
+  .rightside {
+    margin: 80px 0px;
+    border-radius: 24px 0px 0px 24px;
+    flex-shrink: 0;
+    background: url(../../Assets/Images/loginImage.png);
+    background-size: cover;
+    background-position: center;
+  }
+}

@@ -1,0 +1,40 @@
+@import "../../../index.scss";
+
+.form {
+  > div {
+    padding: 32px 0px;
+  }
+  input[type="text"] {
+    background: transparent;
+    border: none;
+    border-bottom: 0.5px solid $seconday-colour;
+    padding: 16px 0px;
+    width: 100%;
+    color: $seconday-colour;
+    font-family: $soure-code;
+    outline: none;
+  }
+  ::placeholder {
+    color: $seconday-colour;
+    font-size: 14px;
+    font-family: $soure-code;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  .button {
+    cursor: pointer;
+    width: 100%;
+    border-radius: 32px;
+    border: 1px solid $seconday-colour;
+    height: 40px;
+    background: transparent;
+    color: $seconday-colour;
+    font-size: 14px;
+    font-family: $soure-code;
+    text-transform: uppercase;
+    :focus {
+      outline: 2px solid $seconday-colour;
+      font-weight: bold;
+    }
+  }
+}
