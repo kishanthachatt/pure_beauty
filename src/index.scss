@@ -6,3 +6,11 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+.ant-spin .ant-spin-dot-item {
+  padding-left: 5px;
+  background-color: $seconday-colour;
+}
+.ant-spin-spinning {
+  padding-left: 8px;
+}
