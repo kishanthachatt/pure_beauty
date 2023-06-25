@@ -16,7 +16,7 @@ export function Login(props: Props) {
         <Form />
       </div>
       <div className={cn.rightside}>
-        {/* <img src={LoginImage} alt="Login Image" /> */}
+        <img src={LoginImage} alt="Login Image" />
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import { LoginParams } from "../../../API/Login/Login.interface";
 import { login } from "../../../API/Login";
 
 import cn from "./Form.module.scss";
+import { ROUTE } from "../../../Routes.constant";
 
 export function Form() {
   const navigate = useNavigate();
@@ -19,7 +20,8 @@ export function Form() {
     if (response.error) {
       setLoading(false);
     } else {
-      navigate("/home");
+      localStorage.setItem("bearer", response.jwt_token);
+      navigate(ROUTE.BLOG);
       setLoading(false);
     }
   };
