@@ -10,7 +10,9 @@ export function Rights() {
     <div className={cn.rights}>
       <p>
         <span>© 2022 PURE BEAUTY. POWERED BY </span>
-        <Image src={PlanetMeida} alt="Planet Meida" />
+        <a href="https://www.planetmedia.com.au/">
+          <Image src={PlanetMeida} alt="Planet Meida" />
+        </a>
       </p>
       <p>ALL RIGHTS RESERVED.</p>
     </div>

@@ -11,8 +11,12 @@ export function SocialMedia() {
     <div className={cn.socialMedia}>
       <label>SOCIAL MEDIA</label>
       <div>
-        <Image src={Instagram} alt="Instagramlogo" />
-        <Image src={Facebook} alt="Facebooklogo" />
+        <a href="https://www.instagram.com/planetmedia.aus" target="_blank">
+          <Image src={Instagram} alt="Instagramlogo" />
+        </a>
+        <a href="https://www.facebook.com/planetmedia.aus/" target="_blank">
+          <Image src={Facebook} alt="Facebooklogo" />
+        </a>
       </div>
     </div>
   );

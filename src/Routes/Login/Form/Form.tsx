@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Formik } from "formik";
-import { Spin } from "antd";
+import { Spin, notification } from "antd";
 import { useNavigate } from "react-router";
 
 import { schema } from "./Form.constant";
@@ -20,6 +20,12 @@ export function Form() {
     if (response.error) {
       setLoading(false);
     } else {
+      notification.success({
+        message: (
+          <div style={{ color: "#842a3a" }}>You have sucessfully Login!</div>
+        ),
+        style: { backgroundColor: "#fdf2db" },
+      });
       localStorage.setItem("bearer", response.jwt_token);
       navigate(ROUTE.BLOG);
       setLoading(false);
