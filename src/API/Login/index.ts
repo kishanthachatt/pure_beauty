@@ -1,6 +1,7 @@
+import axios from "axios";
+
 import { API } from "../../Utils/constants";
 import { LoginParams } from "./Login.interface";
-import axios from "axios";
 
 export async function login(params: LoginParams) {
   const response = await axios
