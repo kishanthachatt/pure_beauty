@@ -3,9 +3,10 @@ import { useNavigate } from "react-router";
 
 import { BlogCardProps as Props } from "./BlogCard.interface";
 import demoImage from "../../../Assets/Images/BlogsdemoImage.png";
+import { ROUTE } from "../../../Routes.constant";
+import { Image } from "../../../Components/Image";
 
 import cn from "./BlogCard.module.scss";
-import { ROUTE } from "../../../Routes.constant";
 
 export function BlogCard(props: Props) {
   const navigate = useNavigate();
@@ -18,7 +19,7 @@ export function BlogCard(props: Props) {
       {props.photoLeftAlign ? (
         <>
           <div className={cn.cardsImage}>
-            <img
+            <Image
               src={props.image ? props.image : demoImage}
               alt="Blogs Image"
             />
@@ -35,7 +36,7 @@ export function BlogCard(props: Props) {
             <h4>{props.title}</h4>
           </div>
           <div className={cn.cardsImage}>
-            <img
+            <Image
               src={props.image ? props.image : demoImage}
               alt="Blogs Image"
             />
