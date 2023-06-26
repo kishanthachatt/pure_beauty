@@ -8,6 +8,7 @@ import { fetchAllBlogs } from "../../API/Blogs";
 import cn from "./Blogs.module.scss";
 import { generateAlignment } from "./Blogs.utils";
 import { BlogsCover } from "./BlogsCover";
+import Loader from "../../Components/Loader";
 
 export function Blogs(props: Props) {
   const [blogs, setBlogs] = React.useState([]);
@@ -44,8 +45,14 @@ export function Blogs(props: Props) {
   return (
     <div>
       <Title title="Blogs" />
-      <div className={cn.cardsContainer}>{renderBlogs()}</div>
-      <BlogsCover />
+      {loading ? (
+        <Loader />
+      ) : (
+        <>
+          <div className={cn.cardsContainer}>{renderBlogs()}</div>
+          <BlogsCover />
+        </>
+      )}
     </div>
   );
 }

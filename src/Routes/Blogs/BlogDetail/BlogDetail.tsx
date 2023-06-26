@@ -7,6 +7,7 @@ import { CoverImage } from "./CoverImage/CoverImage";
 import cn from "./BlogDetail.module.scss";
 import { Title } from "../../../Components/Title";
 import { Content } from "./Content";
+import Loader from "../../../Components/Loader";
 
 export function BlogDetail() {
   const params: any = useParams();
@@ -30,18 +31,22 @@ export function BlogDetail() {
 
   return (
     <div className={cn.blogDetail}>
-      {blogDetail.length !== 0 && (
-        <>
-          <Title title={blogDetail.title.rendered ?? ""} />
-          <div className={cn.coverImage}>
-            <CoverImage
-              image={blogDetail._embedded["wp:featuredmedia"][0].source_url}
-            />
-          </div>
-          <div className={cn.content}>
-            <Content data={blogDetail.content.rendered} />
-          </div>
-        </>
+      {loading ? (
+        <Loader />
+      ) : (
+        blogDetail.length !== 0 && (
+          <>
+            <Title title={blogDetail.title.rendered ?? ""} />
+            <div className={cn.coverImage}>
+              <CoverImage
+                image={blogDetail._embedded["wp:featuredmedia"][0].source_url}
+              />
+            </div>
+            <div className={cn.content}>
+              <Content data={blogDetail.content.rendered} />
+            </div>
+          </>
+        )
       )}
     </div>
   );
