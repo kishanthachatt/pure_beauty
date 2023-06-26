@@ -5,7 +5,7 @@ import { LoginParams } from "./Login.interface";
 
 export async function login(params: LoginParams) {
   const response = await axios
-    .post(`${API.LOGIN_TOKEN_BASE_URL}/wp-json/api/v1/token`, {
+    .post(`${API.BASE_URL}/wp-json/api/v1/token`, {
       username: params.username,
       password: params.password,
     })

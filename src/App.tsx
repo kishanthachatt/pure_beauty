@@ -6,6 +6,7 @@ import Login from "./Routes/Login";
 import Blogs from "./Routes/Blogs";
 import { ROUTE } from "./Routes.constant";
 import { BlogDetail } from "./Routes/Blogs/BlogDetail";
+import Shop from "./Routes/Shop";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route element={<Layout />}>
             <Route path={ROUTE.BLOG} element={<Blogs />} />
             <Route path={ROUTE.BLOG_DETAIL} element={<BlogDetail />} />
+            <Route path={ROUTE.SHOP} element={<Shop />} />
           </Route>
         </Routes>
       </React.Suspense>
