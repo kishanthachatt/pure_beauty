@@ -1,0 +1,35 @@
+@import "../../../../index.scss";
+
+.contentContainer {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  > {
+    color: $primary-colour;
+    font-size: 18px;
+    font-family: $soure-code;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 8px 0px;
+  }
+  blockquote,
+  p,
+  ol > li,
+  ul > li,
+  a > {
+    color: $primary-colour;
+    font-size: 14px;
+    font-family: $soure-code;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  img > {
+    flex-shrink: 0;
+    min-width: 100%;
+    max-height: 400px;
+    border-radius: 16px;
+  }
+}

@@ -1,0 +1,30 @@
+@import "../../index.scss";
+
+.loginContainer {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  background-color: $primary-colour;
+  height: 100vh;
+  .leftside {
+    padding: 56px 64px;
+    > h3 {
+      padding-top: 50px;
+      font-family: $dm-serif;
+      font-size: 26px;
+      color: $seconday-colour;
+      font-weight: lighter;
+    }
+  }
+  .rightside {
+    position: relative;
+    margin: 80px 0px;
+    background-color: #f9d4a8;
+    border-radius: 24px 0px 0px 24px;
+    > img {
+      position: absolute;
+      max-height: 100%;
+      max-width: 100%;
+      border-radius: 24px 0px 0px 24px;
+    }
+  }
+}

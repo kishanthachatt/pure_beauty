@@ -1,0 +1,62 @@
+@import "../../../index.scss";
+
+.form {
+  > div {
+    padding: 18px 0px;
+  }
+
+  input {
+    background: transparent;
+    border: none;
+    border-bottom: 0.5px solid $seconday-colour;
+    padding: 16px 0px;
+    width: 100%;
+    color: $seconday-colour;
+    font-family: $soure-code;
+    outline: none;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    background-color: red !important;
+    border: none;
+    border-bottom: 0.5px solid $seconday-colour;
+    padding: 16px 0px;
+    width: 100%;
+    color: $seconday-colour;
+    font-family: $soure-code;
+    outline: none;
+  }
+
+  ::placeholder {
+    color: $seconday-colour;
+    font-size: 14px;
+    font-family: $soure-code;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+  .error {
+    margin: 8px 0 0px 0px;
+    text-align: left;
+    font-size: 14px;
+    color: #fa2a55;
+  }
+  .button {
+    cursor: pointer !important;
+    width: 100%;
+    border-radius: 32px;
+    border: 1px solid $seconday-colour;
+    height: 40px;
+    background: transparent;
+    color: $seconday-colour;
+    font-size: 14px;
+    font-family: $soure-code;
+    text-transform: uppercase;
+    :focus {
+      cursor: pointer !important;
+      outline: 2px solid $seconday-colour !important;
+      font-weight: bold !important;
+    }
+  }
+}

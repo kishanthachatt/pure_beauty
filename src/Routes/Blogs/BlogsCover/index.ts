@@ -1,0 +1,1 @@
+export { BlogsCover } from "./BlogsCover";

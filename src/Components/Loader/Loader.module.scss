@@ -1,0 +1,10 @@
+@import "../../index.scss";
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100vw - 16px);
+  background-color: $seconday-colour;
+  height: calc(100vh - 250px);
+}
