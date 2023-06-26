@@ -18,3 +18,19 @@ export async function fetchAllBlogs() {
     });
   return response;
 }
+
+export async function fetchBlog(id: number) {
+  const response = await axios
+    .get(`${API.BLOGS_BASE_URL}/wp-json/wp/v2/posts/${id}/?_embed`, {
+      headers: {
+        Authorization: "Bearer " + validToken(),
+      },
+    })
+    .then((response) => {
+      return response;
+    })
+    .catch((error) => {
+      return error;
+    });
+  return response;
+}

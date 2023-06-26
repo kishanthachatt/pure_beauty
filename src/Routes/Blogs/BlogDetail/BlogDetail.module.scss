@@ -1,0 +1,21 @@
+@import "../../../index.scss";
+
+.blogDetail {
+  background-color: $seconday-colour;
+  .coverImage {
+    padding: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    > img {
+      flex-shrink: 0;
+      min-width: 100%;
+      max-height: 800px;
+      border-radius: 16px;
+    }
+  }
+  .content {
+    padding: 64px;
+  }
+}
