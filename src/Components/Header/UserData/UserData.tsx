@@ -13,7 +13,7 @@ export function UserData() {
   const navigate = useNavigate();
   const logout = () => {
     localStorage.clear();
-    navigate(ROUTE.BLOG);
+    navigate(ROUTE.LOGIN);
   };
   return (
     <>
